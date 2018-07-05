@@ -10,9 +10,9 @@ import (
 
 	"github.com/ethereum/go-ethereum/common/math"
 
-	"github.com/sammy007/open-ethereum-pool/rpc"
-	"github.com/sammy007/open-ethereum-pool/storage"
-	"github.com/sammy007/open-ethereum-pool/util"
+	"github.com/unyil/open-ethereum-pool/rpc"
+	"github.com/unyil/open-ethereum-pool/storage"
+	"github.com/unyil/open-ethereum-pool/util"
 )
 
 type UnlockerConfig struct {
@@ -36,7 +36,8 @@ var byzantiumReward = math.MustParseBig256("3000000000000000000")
 
 // Donate 10% from pool fees to developers
 const donationFee = 10.0
-const donationAccount = "0xb85150eb365e7df0941f0cf08235f987ba91506a"
+//change to aura address
+const donationAccount = "0xe639Db97706030Cc9be0E2eDee1f96c947660673"
 
 type BlockUnlocker struct {
 	config   *UnlockerConfig
