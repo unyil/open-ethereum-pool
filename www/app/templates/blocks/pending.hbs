@@ -4,6 +4,7 @@
   <table class="table table-condensed table-striped">
     <thead>
       <tr>
+        <th>Pekerja</th>
         <th>Height</th>
         <th>Time Found</th>
         <th>Variance</th>
@@ -11,7 +12,8 @@
     </thead>
     <tbody>
       {{#each model.candidates as |block|}}
-      <tr>
+      <tr>        
+        <td>{{model.workers}}</td>
         <td><a href="https://etherscan.io/block/{{block.height}}" rel="nofollow" target="_blank">{{format-number block.height}}</a></td>
         <td>{{format-date-locale block.timestamp}}</td>
         <td>
